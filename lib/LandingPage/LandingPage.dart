@@ -83,7 +83,8 @@ class LandingPage extends StatelessWidget {
       return buildImage(sliderImage, itemIndex, context);
       },
       options: CarouselOptions(
-        height: MediaQuery.of(context).size.height,
+        // height: MediaQuery.of(context).size.height,
+        aspectRatio: 16/9,
         autoPlay: true,
         autoPlayInterval: Duration(seconds: 2),
       ),
